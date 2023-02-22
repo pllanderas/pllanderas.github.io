@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fe">
+<head>
+  <meta charset="utf-8">
+  <title>Pick et Ban</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="header vertical">
+                <div class="bluebans">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                </div>
+                <div class="icon">
+                    <a href="https://twitter.com/MTP_Aerzia" target="_blank"><img id="icon" src="./img/league_icon.png"></a>
+                </div>
+                <div class="redbans">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    <img class="banImg" src="./img/square.png" onclick="pickBanClick(this)">
+                </div>
+            </div>
+            <div class="middle">
+                <div class=" blue picks">
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    </div>
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    </div>
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    </div>
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    </div>
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png" onclick="pickBanClick(this)">
+                    </div>
+                </div>
+                <div class="center">
+                    <input type="text" placeholder="Champion name" oninput="filterListResults(this)"></input>
+                    <div id="list" class="list"></div>
+                </div>
+                <div class="red picks">
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png"  onclick="pickBanClick(this)">
+                    </div>
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png"  onclick="pickBanClick(this)">
+                    </div>
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png"  onclick="pickBanClick(this)">
+                    </div>
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png"  onclick="pickBanClick(this)">
+                    </div>
+                    <div class="pick">
+                        <img class="pickImg" src="./img/square.png"  onclick="pickBanClick(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
