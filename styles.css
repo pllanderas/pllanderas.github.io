@@ -1,7 +1,9 @@
 body{
     /* background-color:silver */
-    background-image: linear-gradient(#001c48, #000a19);
+    /* background-image: linear-gradient(#001c48, #000a19); */
     /* background-color: linear-gradient(#222222,#,#222222); */
+    background-color: #111111;
+
 }
 
 #root{
@@ -17,7 +19,9 @@ body{
 .container{
     height: 100%;
     width: 100%;
-    background-color: #000a19;
+    /* background-color: #000a19; */
+    background-color: #242424;
+
 }
 
 .icon{
@@ -31,12 +35,19 @@ body{
 
 .banImg {
     width: 50px;
-    border: 2px solid #001c48;
+    border: 2px solid #111111;
 }
 
 .pickImg {
     width: 100px;
-    border: 2px solid#001c48;
+}
+
+.B {
+    border: 2px solid blue;
+}
+
+.R {
+    border: 2px solid red;
 }
 
 .champImg {
@@ -46,7 +57,7 @@ body{
 }
 
 .selected {
-    outline: 4px solid red;
+    outline: 4px solid #916027;
 }
 
 .header{
@@ -150,7 +161,7 @@ input {
 }
 
 .list {
-    background-color: #011638;
+    background-color: #111111;
     padding: 10px;
     overflow-y : scroll;
     overflow-x: hidden;
@@ -184,4 +195,12 @@ input {
 }
 .list::-webkit-scrollbar-corner {
     background-color: #0000;
+}
+
+.input {
+    background-color: #2f2f2f;
+    border: 2px solid#916027;
+    color: #b99855;
+    font-size: 14px;
+    font-weight: bold;
 }
