@@ -1,18 +1,23 @@
 body{
-    background-color:silver
+    /* background-color:silver */
+    background-image: linear-gradient(#001c48, #000a19);
+    /* background-color: linear-gradient(#222222,#,#222222); */
 }
 
 #root{
     height: 100%;
-    width: 100%;
+    width: 70%;
     min-height: 100vh;
+    display: flex;    
     justify-content: center;
     align-items: center;
+    margin-left: 10%;
 }
 
 .container{
     height: 100%;
     width: 100%;
+    background-color: #000a19;
 }
 
 .icon{
@@ -20,15 +25,18 @@ body{
 }
 
 #icon {
-    width: 50px;
+    width: auto;
+    border-radius: 15px;
 }
 
 .banImg {
     width: 50px;
+    border: 2px solid #001c48;
 }
 
 .pickImg {
     width: 100px;
+    border: 2px solid#001c48;
 }
 
 .champImg {
@@ -50,11 +58,64 @@ body{
 }
 
 .bluebans {
-    left: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .redbans {
-    right: 0px;
+    /* right: 5px; */
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.header2{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.information {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+.redT {
+    text-align: right;
+    flex: 1 auto;
+    padding-right: 2%;
+    /* background-color: red; */
+}
+
+.redT2 {
+    width: 70%;
+    right: 0;
+}
+
+.blueT2 {
+    left: 0;
+    width: 70%;
+}
+
+.blueT {
+    text-align: left;
+    flex: 1 auto;
+    padding-left: 2%;
+    /* background-color: aqua; */
+}
+
+.centerJ {
+    text-align: center;
+    flex: 1 auto;
+    /* background-color: green; */
+}
+
+.centerJ2{
+    width: 45%;
 }
 
 .middle {
@@ -65,8 +126,16 @@ body{
     width: 100%;
 }
 
+.red {
+    padding-right: 5px;
+}
+
+.blue {
+    padding-left: 5px;
+}
+
 .pick{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .center {
@@ -81,6 +150,7 @@ input {
 }
 
 .list {
+    background-color: #011638;
     padding: 10px;
     overflow-y : scroll;
     overflow-x: hidden;
@@ -88,15 +158,16 @@ input {
     width: 98%;
     color: #0000;
     transition: color 0.2s ease;
+    scrollbar-width: none;
 }
 
 .list:hover {
     color:darkgrey;
-  }
+}
 
 .list::-webkit-scrollbar {
     width: 8px;
-  }
+}
 .list::-webkit-scrollbar-button {
     height: 0;
 }
